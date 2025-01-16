@@ -18,7 +18,16 @@ public class Player {
     public int getScore() {
         return score;
     }
-    public void setScore(int score) {
-        this.score = score;
+    public void setScore(String mod, int score) { // added functionality to subtract or add from the score instead only set
+        if (mod == "sub") {
+            this.score -= score;
+        } else if (mod == "add") {
+            this.score += score;
+        } else {
+            this.score = score;
+        }
+        if (this.score < 0) {
+            this.score = 0;
+        }
     }
 }
