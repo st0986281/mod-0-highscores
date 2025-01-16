@@ -1,1 +1,1 @@
-I just uploaded the project to github using intelliJ's built in stuff
+Edit: Used the IDE's built in github functionality to commit
